@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue:hsl(245, 75%, 52%);
+    --secondary-very-pale-blue: hsl(225, 100%, 98%);
+    --secondary-desaturated-blue: hsl(224, 23%, 55%);
+    --secondary-dark-blue: hsl(223, 47%, 23%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top -50px left 0px;
+    background-size: contain;
+   height: 90%;
+   width: 90%;
+   box-shadow: 1px 2px 29px 0px rgba(0,0,0,0.53);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: #fff;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 29px 0px rgba(0,0,0,0.53);
+}
+
+.card__header{
+    width: 100%;
+}
+.card__header__image{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.card__content__title{
+    font-size: 24px;
+   padding: 5px;
+}
+.card__content__text{
+    font-size: 16px;
+    color: var(--secondary-desaturated-blue);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card__content__description__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-very-pale-blue);
+    width: 90%;
+    padding:20px 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.card__content__description__icon{
+   width: 35%;
+    padding-right: 10px;
+}
+
+
+.icon-plan__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plan__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.plan{
+    font-size: 12px;
+    font-weight: bold;
+}
+.price{
+    font-size: 12px;
+    color: var(--secondary-desaturated-blue);
+    margin: 2px 0;
+}
+a{
+    font-size: 12px;
+    color: var(--primary-bright-blue);
+    margin-right: 10px;
+}
+.btn__proceed-to-payment{
+    width: 90%;
+    border: none;
+    padding: 10px 0;
+    color: #fff;
+    background-color: var(--primary-bright-blue);
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 29px 0px rgba(0,0,0,0.53);
+    cursor: pointer;
+}
+.btn__cancel-order{
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-desaturated-blue);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
